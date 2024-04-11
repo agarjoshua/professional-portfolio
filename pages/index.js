@@ -10,7 +10,6 @@ import Cursor from "../components/Cursor";
 
 // Local Data
 import data from "../data/portfolio.json";
-import { resume } from "../data/portfolio.json";
 
 export default function Home() {
   // Ref
