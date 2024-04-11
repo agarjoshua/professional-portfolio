@@ -359,7 +359,7 @@ export default function Home() {
                   Porfolio Website
                 </h1>
                 <p className="text-base font-normal my-4 text-gray-500">
-                      A fun project I'm currently working on to present a friends portfolio
+                      A fun project I'&apos;m currently working on to present a friends portfolio
                 </p>
                 <a
                   href="https://portfolio-ashen-five-61.vercel.app/"
