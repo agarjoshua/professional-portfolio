@@ -11,7 +11,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showResume } = data;
+  const { name, showResume } = data;
 
   useEffect(() => {
     setMounted(true);
@@ -69,15 +69,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             >
               {!isBlog ? (
                 <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Work</Button>
+                  
                   <Button onClick={handleAboutScroll}>About</Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
-                  )}
+                  <Button onClick={handleWorkScroll}>Work</Button>
                   {showResume && (
                     <Button
                       onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
+                        window.open("mailto:joshuaagarjj@gmail.com")
                       }
                     >
                       Resume
@@ -85,7 +83,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:joshuaagarjj@gmail.com")}
                   >
                     Contact
                   </Button>
@@ -108,7 +106,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("mailto:joshuaagarjj@gmail.com")}
                   >
                     Contact
                   </Button>
@@ -131,22 +129,17 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         </h1>
         {!isBlog ? (
           <div className="flex">
-            <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
             {showResume && (
               <Button
-                onClick={() => router.push("/resume")}
-                classes="first:ml-1"
+                onClick={() =>
+                  window.open("AGAR JOSHUA - C.V.pdf", "_blank")
+                }
               >
-                Resume
+                Download C.V
               </Button>
             )}
-
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
+            <Button onClick={() => window.open("mailto:joshuaagarjj@gmail.com")}>
+              Email Me
             </Button>
             {mounted && theme && data.darkMode && (
               <Button
@@ -161,22 +154,18 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           </div>
         ) : (
           <div className="flex">
-            <Button onClick={() => router.push("/")}>Home</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
-            {showResume && (
-              <Button
-                onClick={() => router.push("/resume")}
-                classes="first:ml-1"
-              >
-                Resume
-              </Button>
-            )}
-
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-              Contact
+          {showResume && (
+            <Button
+              onClick={() =>
+                window.open("AGAR JOSHUA - C.V.pdf", "_blank")
+              }
+            >
+              Download C.V
             </Button>
+          )}
+          <Button onClick={() => window.open("mailto:joshuaagarjj@gmail.com")}>
+            Email Me
+          </Button>
 
             {mounted && theme && data.darkMode && (
               <Button

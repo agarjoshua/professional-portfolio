@@ -8,8 +8,14 @@
   font-family: "Hind";
 }
 
+/* Looking for div overflow issue */
+/* * {
+  border:1px solid red !important;
+  } */
+
 body {
   @apply dark:bg-black dark:text-white;
+  overflow-x: hidden; /* Hide scrollbars */
 }
 
 .gradient-circle {
@@ -23,8 +29,8 @@ body {
   filter: blur(40px);
   background: radial-gradient(
     circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
+    rgb(111, 112, 124) 0%,
+    rgba(42, 62, 105, 0.8) 100%
   );
 }
 .gradient-circle-bottom {
@@ -38,8 +44,8 @@ body {
   filter: blur(40px);
   background: radial-gradient(
     circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
+    rgb(111, 112, 124) 0%,
+    rgba(42, 62, 105, 0.8) 100%
   );
 }
 
