@@ -132,7 +132,7 @@ export default function Home() {
                     Lake Basin Development Authority
                   </p>
                   <p className="uppercase py-3 md:py-5 text-gray-300">
-                    August 2021 - Present{" "}
+                    August 2022 - Present{" "}
                   </p>
                   <ul className="list-disc space-y-4 ml-5 text-sm md:text-lg">
                     <li>
@@ -165,7 +165,7 @@ export default function Home() {
                     iSOFT Systems
                   </p>
                   <p className="uppercase py-3 md:py-5 text-gray-300">
-                    August 2021 - Present
+                    August 2022 - Present
                   </p>
                   <ul className="list-disc space-y-4 ml-5 text-sm md:text-lg">
                     <li>
