@@ -1,19 +1,36 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class"],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./src/**/*.{ts,tsx,js,jsx}",
   ],
-  darkMode: "class",
   theme: {
-    screens: {
-      mobs: "320px",
-      mob: "375px",
-      tablet: "768px",
-      laptop: "1024px",
-      desktop: "1280px",
-      laptopl: "1440px",
+    extend: {
+      colors: {
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
